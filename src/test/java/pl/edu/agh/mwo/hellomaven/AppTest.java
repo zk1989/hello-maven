@@ -1,36 +1,15 @@
 package pl.edu.agh.mwo.hellomaven;
 
-import java.util.List;
-
+import org.junit.Assert;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
 
-import static org.assertj.core.api.Assertions.*;
-import static org.mockito.BDDMockito.*;
-
-/**
- * Unit test for the App class.
- */
-@RunWith(MockitoJUnitRunner.class)
 public class AppTest {
 
     /**
-     * Insert here your mocks
-     */
-    @Mock
-    private List mockList;
-
-    /**
-     * Sample test with given-when-then structure using MockitoBDD and AssertJ
+     * Sample test.
      */
     @Test
-    public void listDoesWorkWithMocks() {
-        given(mockList.size()).willReturn(10);
-
-        final int sizeOfTheList = mockList.size();
-
-        assertThat(sizeOfTheList).isEqualTo(10);
+    public void sampleTest() {
+        Assert.assertTrue(true);
     }
 }
