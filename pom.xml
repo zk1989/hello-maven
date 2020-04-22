@@ -43,6 +43,12 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- Site plugin for generating the project documentation. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
             <!-- JaCoCo configuration - provides test coverage reports -->
             <plugin>
                 <groupId>org.jacoco</groupId>
