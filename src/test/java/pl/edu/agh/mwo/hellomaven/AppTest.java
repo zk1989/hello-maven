@@ -12,4 +12,10 @@ public class AppTest {
     public void sampleTest() {
         Assert.assertTrue(true);
     }
+    
+    @Test
+    public void testRandomDiceRoll() {
+        int randomNumber = new App().getRandomNumber();
+        Assert.assertEquals("The dice is not fair.", 4, randomNumber);
+    }
 }
